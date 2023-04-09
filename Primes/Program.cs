@@ -26,11 +26,15 @@ namespace Primes
                 return false;
             if (number == 2)
                 return true;
-            if (number % 2 == 0)
-                return false;
-
+            for(int i = 2; i < number / 2; i++){
+                if (number % i == 0)
+                {
+                    return false;
+                }
+                    
+            }
             //TODO
-            return false;
+            return true;
         }
     }
 }
