@@ -42,14 +42,15 @@ namespace Factorial
             for (int i = 0; i < numbers.Count; i++)
             {
                 sum += numbers[i];
+                
             }
-            return sum;
+            return sum / numbers.Count;
         }
-        public static ulong factorial_recursive(ulong n)
+        public static ulong factorial_recursive(ulong n) 
         {
-            if (n < 1)
+            if (n <= 1)
             {
-                return factorial_recursive(n - 1);
+                return 1;
             }
             return n * factorial_recursive(n - 1);
         }
