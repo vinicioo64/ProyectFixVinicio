@@ -21,9 +21,9 @@ namespace Replace
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < text.Length; i++)
             {
-                if(text[i] == a)
+                if (text[i] == a)
                 {
-                    sb.Append(a);
+                    sb.Append(b);
                 }
                 else
                 {
